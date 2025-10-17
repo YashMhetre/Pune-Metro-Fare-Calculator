@@ -263,19 +263,29 @@ The application currently covers the following Pune Metro lines:
 - **Aqua Line**: Vanaz to Ramwadi
 - Includes 22 stations with interconnection points
 
-## 🤝 Contributing
+## 🧠 Algorithm Implementation
 
-Contributions are what make the open-source community amazing! Any contributions you make are **greatly appreciated**.
+### Shortest Path Calculation
+The application uses the **Breadth-First Search (BFS)** algorithm to find the shortest path between start and end stations:
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- **Why BFS?**: BFS guarantees finding the shortest path in an unweighted graph (metro network)
+- **Time Complexity**: O(V + E) where V is vertices (stations) and E is edges (connections)
+- **Space Complexity**: O(V) for the visited set and queue
 
-## 📝 License
+**How it works:**
+1. Starting from the source station, BFS explores all neighboring stations
+2. It marks each visited station to avoid cycles
+3. Uses a queue to maintain the order of exploration
+4. Stops when the destination station is found
+5. Returns the complete path from start to end
 
-Distributed under the MIT License. See `LICENSE` for more information.
+### Alternate Routes
+The application also implements **Depth-First Search (DFS)** to find all possible paths:
+- DFS explores all routes between two stations
+- Routes are sorted by length (number of stations)
+- Top 3 shortest routes are displayed to the user
+
+---
 
 ## 👤 Contact
 
@@ -283,3 +293,18 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 - GitHub: [@YashMhetre](https://github.com/YashMhetre)
 - LinkedIn: [Yash Mhetre](https://www.linkedin.com/in/yash-mhetre-b775352b6/)
+
+- Below is my Project Output
+
+  Image - 1
+  <img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/c93dad3f-f4f1-447e-8bd9-f7f7850d433b" />
+  
+  Image - 2
+  <img width="1896" height="971" alt="image" src="https://github.com/user-attachments/assets/51bfd189-5198-4a98-b817-3ef43abfc09b" />
+
+  Image - 3
+  <img width="1914" height="909" alt="image" src="https://github.com/user-attachments/assets/c49eb4ce-5a6f-4207-a476-e3bde5b4d52a" />
+
+  Image - 4
+  <img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/54ea1d16-35cc-4d3b-94f1-f3abf373d798" />
+
