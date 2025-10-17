@@ -1,0 +1,29 @@
+# ---- Node modules ----
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# ---- Environment files ----
+.env
+frontend/.env
+backend/.env
+
+# ---- Logs ----
+*.log
+logs/
+frontend/logs/
+backend/logs/
+
+# ---- Build/Dist folders ----
+dist/
+build/
+frontend/build/
+backend/dist/
+
+# ---- System files ----
+.DS_Store
+Thumbs.db
+
+# ---- Temporary files ----
+tmp/
+.cache/

@@ -1,0 +1,100 @@
+/* Dropdown styles */
+select option {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode select {
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+.dark-mode select option {
+  background-color: #16213e;
+  color: #ffffff;
+}
+
+/* Container styles */
+.metro-container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.metro-container.light-mode {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.metro-container.dark-mode {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+/* Card styles */
+.metro-card {
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metro-card.light-mode {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.metro-card.dark-mode {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styles */
+.metro-header {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.metro-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.metro-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Card header styles */
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.card-title.light-mode {
+  color: #333;
+}
+
+.card-title.dark-mode {
+  color: #ffffff;
+}
+
+.card-subtitle {
+  margin-bottom: 2rem;
+}
+
+.card-subtitle.light-mode {
+  color: #666;
+}
+
+.card-subtitle.dark-mode {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Wrapper for max-width */
+.metro-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
